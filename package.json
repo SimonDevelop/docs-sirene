@@ -1,0 +1,27 @@
+{
+  "name": "docs-sirene",
+  "description": "Librairie php pour l'API sirene",
+  "author": {
+    "name": "Simon Micheneau",
+    "email": "contact@simon-micheneau.fr",
+    "url": "https://simon-micheneau.fr"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SimonDevelop/docs-sirene.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SimonDevelop/docs-sirene/issues"
+  },
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.2.0",
+    "@vuepress/plugin-medium-zoom": "^1.2.0",
+    "vuepress": "^1.2.0"
+  },
+  "dependencies": {}
+}
