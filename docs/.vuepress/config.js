@@ -1,5 +1,5 @@
 module.exports = {
-  base: '/',
+  base: '/sirene/',
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: 'https://raw.githubusercontent.com/SimonDevelop/docs-sirene/master/docs/.vuepress/public/assets/img/logo.png' }],
     ['meta', { name: 'og:type', content: 'website' }],
@@ -12,13 +12,6 @@ module.exports = {
     ['meta', { name: 'twitter:image', content: 'https://raw.githubusercontent.com/SimonDevelop/docs-sirene/master/docs/.vuepress/public/assets/img/logo.png' }],
     ['meta', { name: 'theme-color', content: '#0099ff' }]
   ],
-  locales: {
-    '/sirene/': {
-      lang: 'fr',
-      title: 'Documentation Sirene',
-      description: 'Documentation Sirene - Documentation de la librairie php Sirene.'
-    }
-  },
   themeConfig: {
     logo: 'https://raw.githubusercontent.com/SimonDevelop/docs-sirene/master/docs/.vuepress/public/assets/img/logo.png',
     repo: 'SimonDevelop/sirene',
@@ -26,8 +19,27 @@ module.exports = {
     docsDir: 'docs',
     editLinks: true,
     locales: {
-      '/sirene/': require('./config.fr')
-    }
+      '/': {
+        lang: 'fr',
+        title: 'Documentation Sirene',
+        description: 'Documentation Sirene - Documentation de la librairie php Sirene.',
+        selectText: 'Langues',
+        label: 'Français',
+        editLinkText: 'Éditer cette page sur GitHub',
+        nav: require('./nav/nav.fr.js'),
+        sidebar: {
+          '/docs/': [
+            {
+              title: 'Guide',
+              collapsable: false,
+              children: [
+                ''
+              ]
+            }
+          ]
+        }
+      }
+    },
   },
   plugins: {
     '@vuepress/plugin-back-to-top': true,
