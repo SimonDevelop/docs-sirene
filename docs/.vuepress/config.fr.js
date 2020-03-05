@@ -5,7 +5,7 @@ module.exports = {
   editLinkText: 'Éditer cette page sur GitHub',
   nav: require('./nav/nav.fr.js'),
   sidebar: {
-    '/': [
+    '/sirene/': [
       {
         title: 'Guide',
         collapsable: false,

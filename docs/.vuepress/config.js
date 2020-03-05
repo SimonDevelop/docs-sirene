@@ -13,7 +13,7 @@ module.exports = {
     ['meta', { name: 'theme-color', content: '#0099ff' }]
   ],
   locales: {
-    '/': {
+    '/sirene/': {
       lang: 'fr',
       title: 'Documentation Sirene',
       description: 'Documentation Sirene - Documentation de la librairie php Sirene.'
@@ -26,7 +26,7 @@ module.exports = {
     docsDir: 'docs',
     editLinks: true,
     locales: {
-      '/': require('./config.fr')
+      '/sirene/': require('./config.fr')
     }
   },
   plugins: {
