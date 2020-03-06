@@ -26,7 +26,7 @@ module.exports = {
     docsDir: 'docs',
     editLinks: true,
     locales: {
-      '/': require('./versions/master')
+      '/': require('./versions/latest')
     },
   },
   plugins: {

@@ -3,7 +3,7 @@ module.exports = [
     text: 'Versions',
     items: [
       { items: [
-          { text: 'Master', link: '/master/' }
+          { text: 'Latest', link: '/' }
         ]
       }
     ]
