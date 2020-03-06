@@ -4,9 +4,9 @@ module.exports = {
   editLinkText: 'Éditer cette page sur GitHub',
   nav: require('./../nav/nav.fr.js'),
   sidebar: {
-    '/master/': [
+    '/': [
       {
-        title: 'Master',
+        title: 'Guide',
         collapsable: false,
         children: [
           '',
