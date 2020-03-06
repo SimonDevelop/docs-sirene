@@ -12,6 +12,13 @@ module.exports = {
     ['meta', { name: 'twitter:image', content: 'https://raw.githubusercontent.com/SimonDevelop/docs-sirene/master/docs/.vuepress/public/assets/img/logo.png' }],
     ['meta', { name: 'theme-color', content: '#0099ff' }]
   ],
+  locales: {
+    '/': {
+      lang: 'fr',
+      title: 'Documentation Sirene',
+      description: 'Documentation Sirene - Documentation de la librairie php Sirene.',
+    }
+  },
   themeConfig: {
     logo: 'https://raw.githubusercontent.com/SimonDevelop/docs-sirene/master/docs/.vuepress/public/assets/img/logo.png',
     repo: 'SimonDevelop/sirene',
@@ -19,26 +26,7 @@ module.exports = {
     docsDir: 'docs',
     editLinks: true,
     locales: {
-      '/': {
-        lang: 'fr',
-        title: 'Documentation Sirene',
-        description: 'Documentation Sirene - Documentation de la librairie php Sirene.',
-        selectText: 'Langues',
-        label: 'Français',
-        editLinkText: 'Éditer cette page sur GitHub',
-        nav: require('./nav/nav.fr.js'),
-        sidebar: {
-          '/docs/': [
-            {
-              title: 'Guide',
-              collapsable: false,
-              children: [
-                ''
-              ]
-            }
-          ]
-        }
-      }
+      '/': require('./versions/master')
     },
   },
   plugins: {
