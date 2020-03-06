@@ -1,7 +1,12 @@
 module.exports = [
   {
-    text: 'Guide',
-    link: '/'
+    text: 'Versions',
+    items: [
+      { items: [
+          { text: 'Master', link: '/master/' }
+        ]
+      }
+    ]
   },
   {
     text: 'Liens',
