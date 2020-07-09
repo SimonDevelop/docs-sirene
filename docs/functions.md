@@ -48,3 +48,49 @@ array(2) {
   }
 }
 ```
+
+
+## SearchEtablissement
+La fonction `searchEtablissement($params)` vous permet de faire des recherches d'établissements avec des paramètres, les informations des établissements vous seront donnez dans le tableau `etablissements`, vous disposez aussi du nombre de résultat dans le tableau `header`.
+``` php
+<?php
+$params = [
+    "city" => "Bordeaux",
+    "cp" => "33000"
+];
+$result = $sirene->searchEtablissement($params);
+```
+Le resultat retourne un tableau comme ceci si résultat trouvé:
+```
+array(2) {
+  'header' =>
+  array(5) {
+    'statut' =>
+    int(200)
+    'message' =>
+    string(2) "OK"
+    'total' =>
+    int(111937)
+    'debut' =>
+    int(0)
+    'nombre' =>
+    int(20)
+  }
+  'etablissements' =>
+  array(20) {
+    ...
+  }
+}
+```
+
+Voici les différents paramètres disponibles, chaque clé a une référence dans l'API sirene:
+``` php
+$list = [
+    "city" => "libelleCommuneEtablissement",
+    "cp" => "codePostalEtablissement",
+    "company" => "denominationUniteLegale",
+    "sigle" => "sigleUniteLegale",
+    "ape" => "activitePrincipaleUniteLegale",
+    "cj" => "categorieJuridiqueUniteLegale"
+];
+```
