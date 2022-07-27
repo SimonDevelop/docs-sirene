@@ -6,7 +6,7 @@
 
 ## Prérequis
 
-- **[Php](https://secure.php.net/) >= 7.1**
+- **[Php](https://secure.php.net/) >= 7.3**
 > Cette librairie nécessite une version récente de php
 
 
