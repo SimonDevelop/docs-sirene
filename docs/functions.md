@@ -2,6 +2,29 @@
 
 Liste des divers fonctionnalités de l'objet `Sirene`.
 
+## Informations
+La fonction `informations()` vous permet de connaître l'état du service de l'API.
+``` php
+<?php
+$result = $sirene->informations();
+```
+Le resultat retourne un tableau comme ceci :
+```
+array(5) {
+  'etatService' =>
+  string(2) "UP"
+  'etatsDesServices' =>
+  array(2) {
+    'Collection' =>
+    string(6) "string"
+    'etatCollection' =>
+    string(2) "UP"
+  }
+    ...
+}
+```
+
+
 ## Siren
 La fonction `siren(string $siren)` vous permet de faire une recherche depuis un siren donné, les informations d'un ou plusieurs établissements vous seront donnez dans le tableau `uniteLegale`.
 ``` php
