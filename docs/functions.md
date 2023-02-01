@@ -119,10 +119,10 @@ $list = [
 ```
 
 ## Pagination
-Avec cette même fonction `searchEtablissement(array $params, string $tri = "siren", int $page = 1, int $nombre = 20)`, vous pouvez définir le nombre de résultat par page et l'ordre de tri par champ:
+Avec cette même fonction `searchEtablissement(array $params, string $tri = "siren", int $page = 0, int $nombre = 20)`, vous pouvez définir le nombre de résultat par page et l'ordre de tri par champ:
 ``` php
 $result = $Sirene->searchEtablissement([
     "city" => "BORDEAUX"
-], "siret", 1, 5);
+], "siret", 0, 5);
 ```
-Ici je tri par `siret`, affichage de la page `1` pour `5` résultats par page.
+Ici je tri par `siret`, affichage de la page `0` pour `5` résultats par page.
