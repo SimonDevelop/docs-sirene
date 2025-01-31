@@ -30,5 +30,6 @@ $ composer require simondevelop/sirene
 require_once "vendor/autoload.php";
 use \SimonDevelop\Sirene;
 
-$sirene = new Sirene($apiKey);
+$sirene = new Sirene("votre-clef-api");
 ```
+Vous pouvez ajouter en 2e paramètre l'url de l'api sirene si une nouvelle version est disponible (pensez à vérifier la compatibilité).
