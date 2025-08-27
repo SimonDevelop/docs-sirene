@@ -111,10 +111,14 @@ Voici les différents paramètres disponibles, chaque clé a une référence dan
 $list = [
     "city" => "libelleCommuneEtablissement",
     "cp" => "codePostalEtablissement",
+    "cc" => "codeCommuneEtablissement",
+    "cue" => "denominationUsuelleEtablissement",
     "company" => "denominationUniteLegale",
     "sigle" => "sigleUniteLegale",
     "ape" => "activitePrincipaleUniteLegale",
-    "cj" => "categorieJuridiqueUniteLegale"
+    "nape" => "nomenclatureActivitePrincipaleUniteLegale",
+    "cj" => "categorieJuridiqueUniteLegale",
+    "siren" => "siren"
 ];
 ```
 
